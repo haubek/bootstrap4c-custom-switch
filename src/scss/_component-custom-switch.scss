@@ -1,0 +1,100 @@
+/*
+ *
+ *
+ *
+ * Bootstrap 4 Component - Custom switch
+ * Version: 1.0.0
+ * Copyright (c) 2017 Martin Haubek
+ *
+ *
+ *
+ */
+
+.custom-switch {
+  display: inline-block;
+  .custom-switch-input {
+    display: none;
+    &,
+    &:after,
+    &:before,
+    & *,
+    & *:after,
+    & *:before,
+    & + .custom-switch-btn {
+      box-sizing: border-box;
+      &::selection {
+        background: none;
+      }
+    }
+    + .custom-switch-btn {
+      outline: 0;
+      display: inline-block;
+      position: relative;
+      user-select: none;
+      cursor: pointer;
+      width: 68px;
+      height: 38px;
+      margin: 0;
+      padding: 4px;
+      background: $switch-unchecked-bg;
+      border-radius: 10rem;
+      transition: all $switch-duration ease;
+      &:after,
+      &:before {
+        position: relative;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+      }
+      &:after {
+        left: 0;
+        border-radius: 50%;
+        background: white;
+        transition: all $switch-duration ease;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    &:checked + .custom-switch-btn {
+      background: $switch-checked-bg;
+      &:after {
+        left: 50%;
+      }
+      ~ .custom-switch-content-checked {
+        opacity: 1;
+        height: auto;
+      }
+      ~ .custom-switch-content-unchecked {
+        display: none;
+        opacity: 0;
+        height: 0;
+      }
+    }
+    &:not(:checked) + .custom-switch-btn {
+      ~ .custom-switch-content-checked {
+        display: none;
+        opacity: 0;
+        height: 0;
+      }
+      ~ .custom-switch-content-unchecked {
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+  &.custom-switch-label-onoff {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 38'%3E%3Cpath fill='#{$switch-unchecked-color}' d='#{$switch-svg-no}'/%3E%3C/svg%3E");
+        background-size: 68px 38px;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      &:checked + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 38'%3E%3Cpath fill='#{$switch-checked-color}' d='#{$switch-svg-yes}'/%3E%3C/svg%3E");
+      }
+    }
+  }
+}
