@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.2
+
+* Killed emoji class
+
 ## 1.0.1
 
 * More variables for the SCSS build
