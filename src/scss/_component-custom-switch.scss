@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.0.0
+ * Version: 1.0.2
  * Copyright (c) 2017 Martin Haubek
  *
  *
@@ -111,16 +111,6 @@
       }
       &:checked + .custom-switch-btn {
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 7)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-yesno}</text></svg>");
-      }
-    }
-  }
-  &.custom-switch-label-emoji {
-    .custom-switch-input {
-      + .custom-switch-btn {
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 1.75)}' y='#{($switch-height / 1.5)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-emoji}</text></svg>");
-      }
-      &:checked + .custom-switch-btn {
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 6.75)}' y='#{($switch-height / 1.5)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-emoji}</text></svg>");
       }
     }
   }
