@@ -1,12 +1,24 @@
-# bootstrap4c-custom-switch
+# Bootstrap4C
 
-### Bootstrap 4 Component - Custom switch
+### Custom switch
 
 The *Custom switch* is a simple Bootstrap 4 component that turn your default HTML checkbox inputs `<input type="checkbox">` into beautiful iOS style switches — and allow you to display different content depening on the `checked` attribute. The component is 100% CSS, no JavaScript.
 
 See demo here => https://haubek.github.io
 
-**HTML5 markup:**
+### Bower install
+
+```
+bower install bootstrap4c-custom-switch
+```
+
+### CSS
+
+```
+<link href="path/to/component-custom-switch.css" rel="stylesheet">
+```
+
+### HTML5 markup
 
 ```
 <div class="custom-switch">
