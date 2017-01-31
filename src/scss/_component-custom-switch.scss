@@ -32,12 +32,12 @@
       position: relative;
       user-select: none;
       cursor: pointer;
-      width: 68px;
-      height: 38px;
+      width: ($switch-width + $switch-unit);
+      height: ($switch-height + $switch-unit);
       margin: 0;
-      padding: 4px;
+      padding: (($switch-height / 9.5) + $switch-unit);
       background: $switch-unchecked-bg;
-      border-radius: 10rem;
+      border-radius: (($switch-height * 2) + $switch-unit);
       transition: all $switch-duration ease;
       &:after,
       &:before {
@@ -84,16 +84,43 @@
       }
     }
   }
+  &.custom-switch-label-io {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 1.6)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-io}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 3.75)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-io}</text></svg>");
+      }
+    }
+  }
   &.custom-switch-label-onoff {
     .custom-switch-input {
       + .custom-switch-btn {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 38'%3E%3Cpath fill='#{$switch-unchecked-color}' d='#{$switch-svg-no}'/%3E%3C/svg%3E");
-        background-size: 68px 38px;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 1.75)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-onoff}</text></svg>");
       }
       &:checked + .custom-switch-btn {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 38'%3E%3Cpath fill='#{$switch-checked-color}' d='#{$switch-svg-yes}'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 7)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-onoff}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-yesno {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 1.75)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-yesno}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 7)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-yesno}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-emoji {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 1.75)}' y='#{($switch-height / 1.5)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-emoji}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 6.75)}' y='#{($switch-height / 1.5)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-emoji}</text></svg>");
       }
     }
   }
