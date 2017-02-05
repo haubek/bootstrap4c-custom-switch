@@ -1,3 +1,17 @@
-@import "bootstrap-variables";
-@import "component-custom-switch-variables";
+/*
+ *
+ *
+ *
+ * Bootstrap 4 Component - Custom switch
+ * Version: 1.0.3
+ * Copyright (c) 2017 Martin Haubek
+ *
+ *
+ *
+ */
+
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "component-variables";
 @import "component-custom-switch";

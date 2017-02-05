@@ -1,5 +1,10 @@
 # Release History
 
+## 1.0.3
+
+* Better integration with Boostrap variables and mixins
+* Removed `block-inline`
+
 ## 1.0.2
 
 * Killed emoji class
