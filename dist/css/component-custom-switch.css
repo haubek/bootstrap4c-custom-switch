@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.0.3
+ * Version: 1.0.4
  * Copyright (c) 2017 Martin Haubek
  *
  *
@@ -49,10 +49,10 @@
       position: relative;
       display: block;
       content: "";
-      width: 50%;
-      height: 100%; }
+      width: 30px;
+      height: 30px; }
     .custom-switch .custom-switch-input + .custom-switch-btn:after {
-      left: 0;
+      left: 2px;
       border-radius: 50%;
       background: white;
       transition: all 300ms ease; }
@@ -61,7 +61,7 @@
   .custom-switch .custom-switch-input:checked + .custom-switch-btn {
     background: #5cb85c; }
     .custom-switch .custom-switch-input:checked + .custom-switch-btn:after {
-      left: 50%; }
+      left: 30px; }
     .custom-switch .custom-switch-input:checked + .custom-switch-btn ~ .custom-switch-content-checked {
       opacity: 1;
       height: auto; }
@@ -94,3 +94,12 @@
 
 .custom-switch.custom-switch-label-yesno .custom-switch-input:checked + .custom-switch-btn {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='68' height='38'><text x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='#fff'>Yes</text></svg>"); }
+
+.custom-switch.custom-switch-label-status .custom-switch-input + .custom-switch-btn {
+  width: 88px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='88' height='38'><text x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='#fff'>Disabled</text></svg>"); }
+
+.custom-switch.custom-switch-label-status .custom-switch-input:checked + .custom-switch-btn {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='88' height='38'><text x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='#fff'>Enabled</text></svg>"); }
+  .custom-switch.custom-switch-label-status .custom-switch-input:checked + .custom-switch-btn:after {
+    left: 50px; }

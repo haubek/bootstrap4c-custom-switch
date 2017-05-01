@@ -31,11 +31,11 @@
         position: relative;
         display: block;
         content: "";
-        width: 50%;
-        height: 100%;
+        width: (($switch-height - 8) + $switch-unit);
+        height: (($switch-height - 8) + $switch-unit);
       }
       &:after {
-        left: 0;
+        left: 2px;
         border-radius: 50%;
         background: white;
         transition: all $switch-duration ease;
@@ -47,7 +47,7 @@
     &:checked + .custom-switch-btn {
       background: $switch-checked-bg;
       &:after {
-        left: 50%;
+        left: (($switch-width - $switch-height) + $switch-unit);
       }
       ~ .custom-switch-content-checked {
         opacity: 1;
@@ -98,6 +98,20 @@
       }
       &:checked + .custom-switch-btn {
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width}' height='#{$switch-height}'><text x='#{($switch-width / 7)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-yesno}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-status {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        width: ($switch-width-status + $switch-unit);
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status}' height='#{$switch-height}'><text x='#{($switch-width / 1.75)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-status}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status}' height='#{$switch-height}'><text x='#{($switch-width / 7)}' y='#{($switch-height / 1.6)}' font-size='#{($switch-font-size + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-status}</text></svg>");
+        &:after {
+          left: (($switch-width-status - $switch-height) + $switch-unit);
+        }
       }
     }
   }

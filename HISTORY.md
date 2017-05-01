@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.4
+
+* New `status` variable
+
 ## 1.0.3
 
 * Better integration with Boostrap variables and mixins
