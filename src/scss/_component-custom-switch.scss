@@ -9,7 +9,7 @@
     & *:before,
     & + .custom-switch-btn {
       box-sizing: border-box;
-      &::selection {
+      &:selection {
         background: none;
       }
     }

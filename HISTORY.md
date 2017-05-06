@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.5
+
+* Fixed error
+
 ## 1.0.4
 
 * New `status` variable
