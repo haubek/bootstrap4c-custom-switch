@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.6
+
+* SASS SVG URI
+
 ## 1.0.5
 
 * Fixed error
