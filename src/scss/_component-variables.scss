@@ -7,14 +7,14 @@ $switch-font-family:              $font-family-sans-serif;
 $switch-duration:                 300ms;
 
 $switch-checked-color:            $white;
-$switch-checked-bg:               $brand-success;
+$switch-checked-bg:               $green;
 $switch-checked-text-io:          "I";
 $switch-checked-text-onoff:       "On";
 $switch-checked-text-yesno:       "Yes";
 $switch-checked-text-status:      "Enabled";
 
 $switch-unchecked-color:          $white;
-$switch-unchecked-bg:             $gray-lighter;
+$switch-unchecked-bg:             $gray-400;
 $switch-unchecked-text-io:        "O";
 $switch-unchecked-text-onoff:     "Off";
 $switch-unchecked-text-yesno:     "No";

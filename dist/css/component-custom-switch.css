@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.0.6
+ * Version: 1.0.7
  * Copyright (c) 2017 Martin Haubek
  *
  *
@@ -36,7 +36,7 @@
     height: 38px;
     margin: 0;
     padding: 4px;
-    background: #eceeef;
+    background: #ced4da;
     border-radius: 76px;
     transition: all 300ms ease; }
     .custom-switch .custom-switch-input + .custom-switch-btn:after, .custom-switch .custom-switch-input + .custom-switch-btn:before {
@@ -53,7 +53,7 @@
     .custom-switch .custom-switch-input + .custom-switch-btn:before {
       display: none; }
   .custom-switch .custom-switch-input:checked + .custom-switch-btn {
-    background: #5cb85c; }
+    background: #28a745; }
     .custom-switch .custom-switch-input:checked + .custom-switch-btn:after {
       left: 30px; }
     .custom-switch .custom-switch-input:checked + .custom-switch-btn ~ .custom-switch-content-checked {
@@ -72,28 +72,28 @@
     height: auto; }
 
 .custom-switch.custom-switch-label-io .custom-switch-input + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='42.5' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EO%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='42.5' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EO%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-io .custom-switch-input:checked + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='18.13333' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EI%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='18.13333' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EI%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-onoff .custom-switch-input + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EOff%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EOff%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-onoff .custom-switch-input:checked + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EOn%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EOn%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-yesno .custom-switch-input + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3ENo%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3ENo%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-yesno .custom-switch-input:checked + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EYes%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EYes%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-status .custom-switch-input + .custom-switch-btn {
   width: 88px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EDisabled%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='38'%3E%3Ctext x='38.85714' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EDisabled%3C/text%3E%3C/svg%3E"); }
 
 .custom-switch.custom-switch-label-status .custom-switch-input:checked + .custom-switch-btn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif' fill='%23fff'%3EEnabled%3C/text%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='38'%3E%3Ctext x='9.71429' y='23.75' font-size='12px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol' fill='%23fff'%3EEnabled%3C/text%3E%3C/svg%3E"); }
   .custom-switch.custom-switch-label-status .custom-switch-input:checked + .custom-switch-btn:after {
     left: 50px; }

@@ -6,10 +6,10 @@ The *Custom switch* is a simple Bootstrap 4 component that turn your default HTM
 
 See demo here => https://haubek.github.io
 
-### Bower install
+### NPM install
 
 ```
-bower install bootstrap4c-custom-switch
+npm install bootstrap4c-custom-switch
 ```
 
 ### CSS
