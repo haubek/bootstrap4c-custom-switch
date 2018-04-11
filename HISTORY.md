@@ -1,5 +1,10 @@
 # Release History
 
+## 1.0.8
+
+* Upgraded to Bootstrap 4.1.0
+* Added example.html
+
 ## 1.0.7
 
 * Upgraded to Bootstrap 4.0.0
