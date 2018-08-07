@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.9
+
+* Upgraded to Bootstrap 4.1.3
+
 ## 1.0.8
 
 * Upgraded to Bootstrap 4.1.0
