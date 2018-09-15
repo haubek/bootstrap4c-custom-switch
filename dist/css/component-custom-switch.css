@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.0.9
+ * Version: 1.0.10
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
@@ -70,6 +70,11 @@
   .custom-switch .custom-switch-input:not(:checked) + .custom-switch-btn ~ .custom-switch-content-unchecked {
     opacity: 1;
     height: auto; }
+  .custom-switch .custom-switch-input[disabled] + .custom-switch-btn {
+    background: rgba(206, 212, 218, 0.6);
+    cursor: default; }
+  .custom-switch .custom-switch-input[disabled]:checked + .custom-switch-btn {
+    background: rgba(40, 167, 69, 0.4); }
 
 .custom-switch .custom-switch-form-text {
   display: inline-block;

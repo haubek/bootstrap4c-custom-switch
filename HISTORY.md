@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.10
+
+* Added support for the `[disabled]` attribute
+
 ## 1.0.9
 
 * Upgraded to Bootstrap 4.1.3

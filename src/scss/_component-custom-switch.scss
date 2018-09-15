@@ -70,6 +70,15 @@
         height: auto;
       }
     }
+    &[disabled] {
+      + .custom-switch-btn {
+        background: rgba($switch-unchecked-bg, $switch-unchecked-disabled-opacity);
+        cursor: default;
+      }
+      &:checked + .custom-switch-btn {
+        background: rgba($switch-checked-bg, $switch-checked-disabled-opacity);
+      }
+    }
   }
   .custom-switch-form-text {
     display: inline-block;

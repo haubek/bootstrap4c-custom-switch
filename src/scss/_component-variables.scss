@@ -1,21 +1,23 @@
-$switch-unit:                     px;
-$switch-width:                    68;
-$switch-width-status:             88;
-$switch-height:                   38; // The default Bootstrap btn height in px
-$switch-font-size:                12;
-$switch-font-family:              $font-family-sans-serif;
-$switch-duration:                 300ms;
+$switch-unit:                       px;
+$switch-width:                      68;
+$switch-width-status:               88;
+$switch-height:                     38; // The default Bootstrap btn height in px
+$switch-font-size:                  12;
+$switch-font-family:                $font-family-sans-serif;
+$switch-duration:                   300ms;
 
-$switch-checked-color:            $white;
-$switch-checked-bg:               $green;
-$switch-checked-text-io:          "I";
-$switch-checked-text-onoff:       "On";
-$switch-checked-text-yesno:       "Yes";
-$switch-checked-text-status:      "Enabled";
+$switch-checked-color:              $white;
+$switch-checked-bg:                 $green;
+$switch-checked-disabled-opacity:   .4;
+$switch-checked-text-io:            "I";
+$switch-checked-text-onoff:         "On";
+$switch-checked-text-yesno:         "Yes";
+$switch-checked-text-status:        "Enabled";
 
-$switch-unchecked-color:          $white;
-$switch-unchecked-bg:             $gray-400;
-$switch-unchecked-text-io:        "O";
-$switch-unchecked-text-onoff:     "Off";
-$switch-unchecked-text-yesno:     "No";
-$switch-unchecked-text-status:    "Disabled";
+$switch-unchecked-color:            $white;
+$switch-unchecked-bg:               $gray-400;
+$switch-unchecked-disabled-opacity: .6;
+$switch-unchecked-text-io:          "O";
+$switch-unchecked-text-onoff:       "Off";
+$switch-unchecked-text-yesno:       "No";
+$switch-unchecked-text-status:      "Disabled";
