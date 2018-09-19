@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.11
+
+* Added `custom-switch-sm` and `custom-switch-xs` sizes
+
 ## 1.0.10
 
 * Added support for the `[disabled]` attribute

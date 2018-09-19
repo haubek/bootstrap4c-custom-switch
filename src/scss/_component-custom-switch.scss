@@ -132,3 +132,147 @@
     }
   }
 }
+.custom-switch-sm {
+  .custom-switch-input {
+    + .custom-switch-btn {
+      width: ($switch-width-sm + $switch-unit);
+      height: ($switch-height-sm + $switch-unit);
+      padding: (($switch-height-sm / 9.5) + $switch-unit);
+      border-radius: (($switch-height-sm * 2) + $switch-unit);
+      &:after,
+      &:before {
+        width: (($switch-height-sm - 6) + $switch-unit);
+        height: (($switch-height-sm - 6) + $switch-unit);
+      }
+      &:after {
+        left: 1px;
+      }
+    }
+    &:checked + .custom-switch-btn {
+      &:after {
+        left: (($switch-width-sm - $switch-height-sm) + $switch-unit);
+      }
+    }
+  }
+  .custom-switch-form-text {
+    height: ($switch-height-sm + $switch-unit);
+    margin-left: .5rem;
+    line-height: ($switch-height-sm + $switch-unit);
+  }
+  &.custom-switch-label-io {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 1.6)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-io}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 3.75)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-io}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-onoff {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 1.825)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-onoff}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 7)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-onoff}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-yesno {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 1.825)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-yesno}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 7)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-yesno}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-status {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        width: ($switch-width-status-sm + $switch-unit);
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 1.825)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-status}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status-sm}' height='#{$switch-height-sm}'><text x='#{($switch-width-sm / 7)}' y='#{($switch-height-sm / 1.6)}' font-size='#{($switch-font-size-sm + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-status}</text></svg>");
+        &:after {
+          left: (($switch-width-status-sm - $switch-height-sm) + $switch-unit);
+        }
+      }
+    }
+  }
+}
+.custom-switch-xs {
+  .custom-switch-input {
+    + .custom-switch-btn {
+      width: ($switch-width-xs + $switch-unit);
+      height: ($switch-height-xs + $switch-unit);
+      padding: (($switch-height-xs / 9.5) + $switch-unit);
+      border-radius: (($switch-height-xs * 2) + $switch-unit);
+      &:after,
+      &:before {
+        width: (($switch-height-xs - 6) + $switch-unit);
+        height: (($switch-height-xs - 6) + $switch-unit);
+      }
+      &:after {
+        left: 1px;
+      }
+    }
+    &:checked + .custom-switch-btn {
+      &:after {
+        left: (($switch-width-xs - $switch-height-xs) + $switch-unit);
+      }
+    }
+  }
+  .custom-switch-form-text {
+    height: ($switch-height-xs + $switch-unit);
+    margin-left: .5rem;
+    line-height: ($switch-height-xs + $switch-unit);
+  }
+  &.custom-switch-label-io {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 1.75)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-io}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 3.75)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-io}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-onoff {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 1.875)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-onoff}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 7)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-onoff}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-yesno {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 1.875)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-yesno}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 7)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-yesno}</text></svg>");
+      }
+    }
+  }
+  &.custom-switch-label-status {
+    .custom-switch-input {
+      + .custom-switch-btn {
+        width: ($switch-width-status-xs + $switch-unit);
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 1.875)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-unchecked-color}'>#{$switch-unchecked-text-status}</text></svg>");
+      }
+      &:checked + .custom-switch-btn {
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' width='#{$switch-width-status-xs}' height='#{$switch-height-xs}'><text x='#{($switch-width-xs / 7)}' y='#{($switch-height-xs / 1.6)}' font-size='#{($switch-font-size-xs + $switch-unit)}' font-family='#{$switch-font-family}' fill='#{$switch-checked-color}'>#{$switch-checked-text-status}</text></svg>");
+        &:after {
+          left: (($switch-width-status-xs - $switch-height-xs) + $switch-unit);
+        }
+      }
+    }
+  }
+}
