@@ -1,5 +1,11 @@
 # Release History
 
+## 1.1.0
+
+* Fixed keyboard accessibility
+* Added required styling
+* Added validation state styling
+
 ## 1.0.12
 
 * Upgraded to Bootstrap 4.3.1

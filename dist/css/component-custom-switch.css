@@ -3,14 +3,16 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.0.12
+ * Version: 1.1.0
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
  *
  */
 .custom-switch .custom-switch-input {
-  display: none; }
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
   .custom-switch .custom-switch-input, .custom-switch .custom-switch-input:after, .custom-switch .custom-switch-input:before,
   .custom-switch .custom-switch-input *,
   .custom-switch .custom-switch-input *:after,
@@ -38,7 +40,7 @@
     padding: 4px;
     background: #adb5bd;
     border-radius: 76px;
-    transition: all 200ms ease; }
+    transition: all 150ms ease; }
     .custom-switch .custom-switch-input + .custom-switch-btn:after, .custom-switch .custom-switch-input + .custom-switch-btn:before {
       position: relative;
       display: block;
@@ -49,7 +51,7 @@
       left: 2px;
       border-radius: 50%;
       background: white;
-      transition: all 200ms ease; }
+      transition: all 150ms ease; }
     .custom-switch .custom-switch-input + .custom-switch-btn:before {
       display: none; }
     .custom-switch .custom-switch-input + .custom-switch-btn.text-hide {
@@ -77,8 +79,10 @@
     cursor: default; }
   .custom-switch .custom-switch-input[disabled]:checked + .custom-switch-btn {
     background: rgba(40, 167, 69, 0.4); }
-  .custom-switch .custom-switch-input:not([disabled]):active ~ .custom-switch-btn, .custom-switch .custom-switch-input:not([disabled]):focus ~ .custom-switch-btn, .custom-switch .custom-switch-input:not([disabled]):hover ~ .custom-switch-btn {
+  .custom-switch .custom-switch-input:not([disabled]):focus ~ .custom-switch-btn {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(56, 123, 189, 0.25); }
+  .custom-switch .custom-switch-input[required] ~ .custom-switch-btn {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.125rem rgba(220, 53, 69, 0.5); }
 
 .custom-switch .custom-switch-form-text {
   display: inline-block;
@@ -205,3 +209,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76' height='24'%3E%3Ctext x='6.85714' y='15' font-size='10px' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji' fill='%23fff'%3EEnabled%3C/text%3E%3C/svg%3E"); }
   .custom-switch-xs.custom-switch-label-status .custom-switch-input:checked + .custom-switch-btn:after {
     left: 52px; }
+
+.is-invalid .custom-switch .custom-switch-input ~ .custom-switch-btn,
+.was-validated .custom-switch:invalid .custom-switch-input ~ .custom-switch-btn {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem #dc3545; }

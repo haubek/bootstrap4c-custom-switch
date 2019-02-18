@@ -12,44 +12,58 @@
     <div class="d-flex align-items-start flex-column h-100">
       <div class="w-100 m-auto py-5 text-center">
 
-        <div class="custom-switch">
+        <div class="custom-switch pl-0">
           <input class="custom-switch-input" id="example_01" type="checkbox">
           <label class="custom-switch-btn" for="example_01"></label>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-io">
+
+        <div class="custom-switch custom-switch-label-io pl-0">
           <input class="custom-switch-input" id="example_02" type="checkbox">
           <label class="custom-switch-btn" for="example_02"></label>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-onoff">
+
+        <div class="custom-switch custom-switch-label-onoff pl-0">
           <input class="custom-switch-input" id="example_03" type="checkbox">
           <label class="custom-switch-btn" for="example_03"></label>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-yesno">
+
+        <div class="custom-switch custom-switch-label-yesno pl-0">
           <input class="custom-switch-input" id="example_04" type="checkbox">
           <label class="custom-switch-btn" for="example_04"></label>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-status">
+
+        <div class="custom-switch custom-switch-label-status pl-0">
           <input class="custom-switch-input" id="example_05" type="checkbox">
           <label class="custom-switch-btn" for="example_05"></label>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-onoff custom-switch-sm">
+
+        <div class="custom-switch custom-switch-label-onoff custom-switch-sm pl-0">
           <input class="custom-switch-input" id="example_06" type="checkbox">
           <label class="custom-switch-btn" for="example_06"></label>
         </div>
         <p>I'm <code>sm</code></p>
+
         <hr>
-        <div class="custom-switch custom-switch-label-onoff custom-switch-xs">
+
+        <div class="custom-switch custom-switch-label-onoff custom-switch-xs pl-0">
           <input class="custom-switch-input" id="example_07" type="checkbox">
           <label class="custom-switch-btn" for="example_07"></label>
         </div>
         <p>I'm <code>xs</code></p>
+
         <hr>
-        <div class="custom-switch custom-switch-label-yesno">
+
+        <div class="custom-switch custom-switch-label-yesno pl-0">
           <input class="custom-switch-input" id="example_08" type="checkbox">
           <label class="custom-switch-btn" for="example_08"></label>
           <div class="custom-switch-content-checked">
@@ -59,24 +73,48 @@
             <span class="text-danger">I'm unchecked (click me!)</span>
           </div>
         </div>
+
         <hr>
-        <div class="custom-switch custom-switch-label-io">
-          <input class="custom-switch-input" id="example_09" type="checkbox" disabled>
+
+        <div class="custom-switch pl-0">
+          <input class="custom-switch-input" id="example_09" type="checkbox" required>
           <label class="custom-switch-btn" for="example_09"></label>
         </div>
-        <div class="custom-switch custom-switch-label-io">
-          <input class="custom-switch-input" id="example_10" type="checkbox" checked disabled>
+        <p>I'm <code>required</code></p>
+
+        <hr>
+
+        <div class="custom-switch pl-0">
+          <input class="custom-switch-input" id="example_10" type="checkbox" disabled>
           <label class="custom-switch-btn" for="example_10"></label>
         </div>
-        <p>I'm disabled</p>
+        <div class="custom-switch pl-0">
+          <input class="custom-switch-input" id="example_11" type="checkbox" checked disabled>
+          <label class="custom-switch-btn" for="example_11"></label>
+        </div>
+        <p>I'm <code>disabled</code></p>
+
         <hr>
+
         <div class="form-group">
-          <div for="example_11">I'm a form label:</div>
-          <div class="custom-switch">
-            <input type="checkbox" class="custom-switch-input" id="example_11" checked>
-            <label class="custom-switch-btn text-hide" for="example_11">{value}</label>
+          <div for="example_12">I'm a &lt;div&gt; form label:</div>
+          <div class="custom-switch pl-0">
+            <input type="checkbox" class="custom-switch-input" id="example_12" checked>
+            <label class="custom-switch-btn text-hide" for="example_12">{value}</label>
           </div>
         </div>
+
+        <hr>
+        <legend>Validation</legend>
+        <form class="was-validated">
+          <div class="form-group is-invalid">
+            <div class="custom-switch pl-0">
+              <input class="custom-switch-input" id="example_13" type="checkbox">
+              <label class="custom-switch-btn" for="example_13"></label>
+            </div>
+          </div>
+        </form>
+        <p>I'm <code>invalid</code></p>
 
       </div>
     </div>

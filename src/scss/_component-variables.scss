@@ -12,7 +12,9 @@ $switch-font-size:                  12;
 $switch-font-size-sm:               11;
 $switch-font-size-xs:               10;
 $switch-font-family:                $font-family-sans-serif;
-$switch-duration:                   200ms;
+$switch-duration:                   150ms;
+$switch-required-color:             $danger;
+$switch-invalid-color:              $form-feedback-invalid-color;
 
 $switch-checked-color:              $white;
 $switch-checked-bg:                 $green;
