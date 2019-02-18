@@ -12,7 +12,7 @@ $switch-font-size:                  12;
 $switch-font-size-sm:               11;
 $switch-font-size-xs:               10;
 $switch-font-family:                $font-family-sans-serif;
-$switch-duration:                   300ms;
+$switch-duration:                   200ms;
 
 $switch-checked-color:              $white;
 $switch-checked-bg:                 $green;
@@ -23,7 +23,7 @@ $switch-checked-text-yesno:         "Yes";
 $switch-checked-text-status:        "Enabled";
 
 $switch-unchecked-color:            $white;
-$switch-unchecked-bg:               $gray-400;
+$switch-unchecked-bg:               $gray-500;
 $switch-unchecked-disabled-opacity: .6;
 $switch-unchecked-text-io:          "O";
 $switch-unchecked-text-onoff:       "Off";

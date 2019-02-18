@@ -1,5 +1,11 @@
 # Release History
 
+## 1.0.12
+
+* Upgraded to Bootstrap 4.3.1
+* Added `box-shadow` styling for accessibility
+* Added `text-hide` styling for accessibility
+
 ## 1.0.11
 
 * Added `custom-switch-sm` and `custom-switch-xs` sizes

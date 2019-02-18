@@ -43,6 +43,9 @@
       &:before {
         display: none;
       }
+      &.text-hide {
+        top: -.80rem;
+      }
     }
     &:checked + .custom-switch-btn {
       background: $switch-checked-bg;
@@ -77,6 +80,15 @@
       }
       &:checked + .custom-switch-btn {
         background: rgba($switch-checked-bg, $switch-checked-disabled-opacity);
+      }
+    }
+    &:not([disabled]) {
+      &:active,
+      &:focus,
+      &:hover {
+        ~ .custom-switch-btn {
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 .25rem rgba(56,123,189,.25);
+        }
       }
     }
   }

@@ -20,6 +20,8 @@ yarn add bootstrap4c-custom-switch
 
 ### HTML5 markup
 
+See `example.html` for all markup examples.
+
 ```
 <div class="custom-switch">
   <input class="custom-switch-input" id="ADD_ID_HERE" type="checkbox">

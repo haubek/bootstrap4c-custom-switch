@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Example</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="dist/css/component-custom-switch.css" rel="stylesheet">
 </head>
 <body class="h-100">
@@ -12,63 +12,71 @@
     <div class="d-flex align-items-start flex-column h-100">
       <div class="w-100 m-auto py-5 text-center">
 
-<div class="custom-switch custom-switch-label">
-  <input class="custom-switch-input" id="example_01" type="checkbox">
-  <label class="custom-switch-btn" for="example_01"></label>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-io">
-  <input class="custom-switch-input" id="example_02" type="checkbox">
-  <label class="custom-switch-btn" for="example_02"></label>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-onoff">
-  <input class="custom-switch-input" id="example_03" type="checkbox">
-  <label class="custom-switch-btn" for="example_03"></label>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-yesno">
-  <input class="custom-switch-input" id="example_04" type="checkbox">
-  <label class="custom-switch-btn" for="example_04"></label>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-status">
-  <input class="custom-switch-input" id="example_05" type="checkbox">
-  <label class="custom-switch-btn" for="example_05"></label>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-onoff custom-switch-sm">
-  <input class="custom-switch-input" id="example_06" type="checkbox">
-  <label class="custom-switch-btn" for="example_06"></label>
-</div>
-<p>I'm <code>sm</code></p>
-<hr>
-<div class="custom-switch custom-switch-label-onoff custom-switch-xs">
-  <input class="custom-switch-input" id="example_07" type="checkbox">
-  <label class="custom-switch-btn" for="example_07"></label>
-</div>
-<p>I'm <code>xs</code></p>
-<hr>
-<div class="custom-switch custom-switch-label-yesno">
-  <input class="custom-switch-input" id="example_08" type="checkbox">
-  <label class="custom-switch-btn" for="example_08"></label>
-  <div class="custom-switch-content-checked">
-    <span class="text-success">I'm checked</span>
-  </div>
-  <div class="custom-switch-content-unchecked">
-    <span class="text-danger">I'm unchecked (click me!)</span>
-  </div>
-</div>
-<hr>
-<div class="custom-switch custom-switch-label-io">
-  <input class="custom-switch-input" id="example_09" type="checkbox" disabled>
-  <label class="custom-switch-btn" for="example_09"></label>
-</div>
-<div class="custom-switch custom-switch-label-io">
-  <input class="custom-switch-input" id="example_10" type="checkbox" checked disabled>
-  <label class="custom-switch-btn" for="example_10"></label>
-</div>
-<p>I'm disabled</p>
+        <div class="custom-switch">
+          <input class="custom-switch-input" id="example_01" type="checkbox">
+          <label class="custom-switch-btn" for="example_01"></label>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-io">
+          <input class="custom-switch-input" id="example_02" type="checkbox">
+          <label class="custom-switch-btn" for="example_02"></label>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-onoff">
+          <input class="custom-switch-input" id="example_03" type="checkbox">
+          <label class="custom-switch-btn" for="example_03"></label>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-yesno">
+          <input class="custom-switch-input" id="example_04" type="checkbox">
+          <label class="custom-switch-btn" for="example_04"></label>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-status">
+          <input class="custom-switch-input" id="example_05" type="checkbox">
+          <label class="custom-switch-btn" for="example_05"></label>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-onoff custom-switch-sm">
+          <input class="custom-switch-input" id="example_06" type="checkbox">
+          <label class="custom-switch-btn" for="example_06"></label>
+        </div>
+        <p>I'm <code>sm</code></p>
+        <hr>
+        <div class="custom-switch custom-switch-label-onoff custom-switch-xs">
+          <input class="custom-switch-input" id="example_07" type="checkbox">
+          <label class="custom-switch-btn" for="example_07"></label>
+        </div>
+        <p>I'm <code>xs</code></p>
+        <hr>
+        <div class="custom-switch custom-switch-label-yesno">
+          <input class="custom-switch-input" id="example_08" type="checkbox">
+          <label class="custom-switch-btn" for="example_08"></label>
+          <div class="custom-switch-content-checked">
+            <span class="text-success">I'm checked</span>
+          </div>
+          <div class="custom-switch-content-unchecked">
+            <span class="text-danger">I'm unchecked (click me!)</span>
+          </div>
+        </div>
+        <hr>
+        <div class="custom-switch custom-switch-label-io">
+          <input class="custom-switch-input" id="example_09" type="checkbox" disabled>
+          <label class="custom-switch-btn" for="example_09"></label>
+        </div>
+        <div class="custom-switch custom-switch-label-io">
+          <input class="custom-switch-input" id="example_10" type="checkbox" checked disabled>
+          <label class="custom-switch-btn" for="example_10"></label>
+        </div>
+        <p>I'm disabled</p>
+        <hr>
+        <div class="form-group">
+          <div for="example_11">I'm a form label:</div>
+          <div class="custom-switch">
+            <input type="checkbox" class="custom-switch-input" id="example_11" checked>
+            <label class="custom-switch-btn text-hide" for="example_11">{value}</label>
+          </div>
+        </div>
 
       </div>
     </div>
