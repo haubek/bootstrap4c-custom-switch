@@ -1,5 +1,9 @@
 # Release History
 
+## 1.1.2
+
+* Improved `:before` and `:after` calculation
+
 ## 1.1.1
 
 * Fixed `line-height` issue

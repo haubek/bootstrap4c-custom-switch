@@ -25,7 +25,7 @@
       width: ($switch-width + $switch-unit);
       height: ($switch-height + $switch-unit);
       margin: 0;
-      padding: (($switch-height / 9.5) + $switch-unit);
+      padding: ((round(($switch-height - (round($switch-height * .75))) / 2) - 1) + $switch-unit);
       background: $switch-unchecked-bg;
       border-radius: (($switch-height * 2) + $switch-unit);
       transition: all $switch-duration ease;
@@ -34,11 +34,11 @@
         position: relative;
         display: block;
         content: "";
-        width: (($switch-height - 8) + $switch-unit);
-        height: (($switch-height - 8) + $switch-unit);
+        width: (round($switch-height * .75) + $switch-unit);
+        height: (round($switch-height * .75) + $switch-unit);
       }
       &:after {
-        left: 2px;
+        left: ((round(($switch-height - (round($switch-height * .75))) / 2) - 3) + $switch-unit);
         border-radius: 50%;
         background: white;
         transition: all $switch-duration ease;
@@ -156,15 +156,15 @@
     + .custom-switch-btn {
       width: ($switch-width-sm + $switch-unit);
       height: ($switch-height-sm + $switch-unit);
-      padding: (($switch-height-sm / 9.5) + $switch-unit);
+      padding: ((round(($switch-height-sm - (round($switch-height-sm * .75))) / 2) - 1) + $switch-unit);
       border-radius: (($switch-height-sm * 2) + $switch-unit);
       &:after,
       &:before {
-        width: (($switch-height-sm - 6) + $switch-unit);
-        height: (($switch-height-sm - 6) + $switch-unit);
+        width: (round($switch-height-sm * .75) + $switch-unit);
+        height: (round($switch-height-sm * .75) + $switch-unit);
       }
       &:after {
-        left: 1px;
+        left: ((round(($switch-height-sm - (round($switch-height-sm * .75))) / 2) - 2) + $switch-unit);
       }
     }
     &:checked + .custom-switch-btn {
@@ -229,15 +229,15 @@
     + .custom-switch-btn {
       width: ($switch-width-xs + $switch-unit);
       height: ($switch-height-xs + $switch-unit);
-      padding: (($switch-height-xs / 9.5) + $switch-unit);
+      padding: ((round(($switch-height-xs - (round($switch-height-xs * .75))) / 2)) + $switch-unit);
       border-radius: (($switch-height-xs * 2) + $switch-unit);
       &:after,
       &:before {
-        width: (($switch-height-xs - 6) + $switch-unit);
-        height: (($switch-height-xs - 6) + $switch-unit);
+        width: (round($switch-height-xs * .75) + $switch-unit);
+        height: (round($switch-height-xs * .75) + $switch-unit);
       }
       &:after {
-        left: 1px;
+        left: ((round(($switch-height-xs - (round($switch-height-xs * .75))) / 2) - 2) + $switch-unit);
       }
     }
     &:checked + .custom-switch-btn {

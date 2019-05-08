@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Custom switch
- * Version: 1.1.1
+ * Version: 1.1.2
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
@@ -47,8 +47,8 @@
         position: relative;
         display: block;
         content: "";
-        width: 30px;
-        height: 30px; }
+        width: 29px;
+        height: 29px; }
       .custom-switch .custom-switch-input + .custom-switch-btn:after {
         left: 2px;
         border-radius: 50%;
@@ -116,13 +116,13 @@
   .custom-switch-sm .custom-switch-input + .custom-switch-btn {
     width: 60px;
     height: 31px;
-    padding: 3.26316px;
+    padding: 3px;
     border-radius: 62px; }
     .custom-switch-sm .custom-switch-input + .custom-switch-btn:after, .custom-switch-sm .custom-switch-input + .custom-switch-btn:before {
-      width: 25px;
-      height: 25px; }
+      width: 23px;
+      height: 23px; }
     .custom-switch-sm .custom-switch-input + .custom-switch-btn:after {
-      left: 1px; }
+      left: 2px; }
   .custom-switch-sm .custom-switch-input:checked + .custom-switch-btn:after {
     left: 29px; }
   .custom-switch-sm .custom-switch-form-text {
@@ -154,7 +154,7 @@
   .custom-switch-xs .custom-switch-input + .custom-switch-btn {
     width: 48px;
     height: 24px;
-    padding: 2.52632px;
+    padding: 3px;
     border-radius: 48px; }
     .custom-switch-xs .custom-switch-input + .custom-switch-btn:after, .custom-switch-xs .custom-switch-input + .custom-switch-btn:before {
       width: 18px;
