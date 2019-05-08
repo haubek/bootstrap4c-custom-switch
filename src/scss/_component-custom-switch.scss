@@ -1,4 +1,5 @@
 .custom-switch {
+  line-height: ($switch-font-size + $switch-unit);
   .custom-switch-input {
     position: absolute;
     z-index: -1;
@@ -150,6 +151,7 @@
   }
 }
 .custom-switch-sm {
+  line-height: ($switch-font-size-sm + $switch-unit);
   .custom-switch-input {
     + .custom-switch-btn {
       width: ($switch-width-sm + $switch-unit);
@@ -222,6 +224,7 @@
   }
 }
 .custom-switch-xs {
+  line-height: ($switch-font-size-xs + $switch-unit);
   .custom-switch-input {
     + .custom-switch-btn {
       width: ($switch-width-xs + $switch-unit);

@@ -1,5 +1,9 @@
 # Release History
 
+## 1.1.1
+
+* Fixed `line-height` issue
+
 ## 1.1.0
 
 * Fixed keyboard accessibility
