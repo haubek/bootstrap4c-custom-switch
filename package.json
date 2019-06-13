@@ -38,7 +38,7 @@
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
-    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-strip-css-comments": "^2.0.0",
     "sass-svg-uri": "^1.0.0"
   }
 }
