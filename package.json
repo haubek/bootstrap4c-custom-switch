@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^2.3.2",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
